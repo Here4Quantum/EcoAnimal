@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="stylesheet.css">
+            <title>Game | Crocodile</title>
+        </head>
+
+        <body>
+
+            <div class = "navigation">
+                <a href ="index.html">Home</a>
+                <a href ="game-index.html" class = "active">Play Game</a>
+                <a href="animals.html" disabled>Your Animal QR</a>
+                <a href="all-animals.html">Animal Facts</a>
+            </div>
+
+            <div class="row">
+
+                <div class="column1">
+                    <div id = "Game">
+                        <h1>Crocodile</h1>
+                        <img alt = "Crocodile" width = "75%" src = "https://images.immediate.co.uk/production/volatile/sites/23/2014/11/GettyImages-123529247-2a29d6c.jpg?quality=90&resize=768%2C574">
+                        <p>Crocodiles are large reptiles found in tropical regions of Africa, Asia, the Americas and Australia. They are members of the order Crocodilia, which also includes caimans, gharials and alligators.</p>
+                        <p>Crocodiles are carnivores, which mean they eat only meat. In the wild, they feast on fish, birds, frogs and crustaceans. At the zoo, they eat small animals that have already been killed for them, such as rats, fish or mice. They also eat live locusts. In the wild, crocodiles will clamp down on their prey with their massive jaws, crush it, and then they will swallow the prey whole. They do not have the capability to chew or break off small pieces of food like other animals. </p>
+                        <h3>Crocodiles are now becoming extinct due to hunting by humans. They are often used for food or their skin which means that there population is slowly dying out. We need crocodiles to keep waters diverse.</h3>
+
+                        <h2>Here is a quick question to unlock your AR crocodile.</h2>
+                        <p>What continent does not have crocodiles?</p>
+
+                        <label for="Africa">Africa</label>
+                        <input type="radio" name="question" value="Africa"><br>
+
+                        <label for="Europe">Europe</label>
+                        <input type="radio" name="question" value="Europe"><br>
+
+                        <label for="America">America</label>
+                        <input type="radio" name="question" value="America"><br>
+
+                        <button type="submit" value="Submit" class = "button" onclick = "check();">Let's get my QR code!</button>
+
+                        <h4>**Please note all information was sourced from live science**</h4>
+                    </div>
+                </div>
+
+
+                <div class="column1">
+                    <div id = "QR">
+                        <h1 id = "code">No QR code yet.</h1>
+                        <a href = "koala-game.html"><button class = "button" id = "MoveOn" disabled>Move to next animal</button></a><br>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <script>
+                function check(){
+                    var answer = document.querySelector('input[name="question"]:checked').value;
+                    if (answer == "Europe")
+                    {
+                        alert("Well done, you are correct!");
+                        var img = document.createElement("img");
+                        img.src = "Crocodile QR.png";
+                        var src = document.getElementById("QR");
+                        src.appendChild(img);
+                        document.getElementById("code").innerHTML = "This is your code";
+                        document.getElementById("MoveOn").disabled = false;
+                        
+                    }
+                }
+
+            </script>
+
+        </body>
+    </html>

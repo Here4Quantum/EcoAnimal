@@ -1,0 +1,108 @@
+.navigation{
+    background-color: rgb(4, 99, 28);
+    overflow: hidden;
+}
+
+.navigation a{
+    float: left;
+    color: black;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navigation a:hover{
+    background-color: chartreuse;
+    color: rgb(255, 255, 255);  
+}
+
+.navigation a.active{
+    background-color: rgb(20, 209, 146);
+    color: black;
+}
+
+body{
+    background: rgb(168, 221, 75);
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button_ {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+#Game{
+    background-color: rgb(196, 219, 155);
+    border: black solid;
+    text-align: center;
+    padding: 5px;
+    margin: 3px;
+}
+
+#QR{
+    background-color: rgb(167, 224, 68);
+    border: black solid;
+    text-align: center;
+    padding: 5px;
+    margin: 3px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.column1 {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.column2 {
+    float: left;
+    width: 25%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.home-page{
+    text-align: center;
+    padding: 5px;
+    margin: 3px;
+}
+
+.home-img{
+    padding: 4px;
+}
